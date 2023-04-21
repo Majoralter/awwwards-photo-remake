@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+body{
+    background: rgb(221, 221, 252);
+    overflow-x: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+
+    h1{
+        font-size: clamp(5vw, 7vw, 15vw);
+        color: orangered;
+    }
+
+    p{
+        font-size: 1.5rem;
+        color: rgb(38, 38, 68);
+        font-weight: 500;
+    }
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    position: relative;
+
+    img{
+        width: 35.25rem;
+        height: 35.25rem;
+        object-fit: cover;
+        position: absolute;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+
+    .img-left{
+        z-index: 2;
+        transform: rotate(-2.3deg);
+    }
+
+          .img-right {
+              z-index: 1;
+              transform: rotate(2.3deg);
+          }
+
+          label{
+            color: orangered;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+
+          h2{
+            font-size: 5rem;
+            font-weight: bolder;
+            color: #2D3142;
+          }
+
+          a{
+            text-decoration: none;
+            color: #2D3142;
+            outline: solid 2px orangered;
+            border-radius: .7rem;
+            padding: .8rem;
+            font-weight: bold;
+          }
+}
